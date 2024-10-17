@@ -1,0 +1,168 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  width: 100%;
+}
+.container{
+  padding: 2rem;
+}
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.slider {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow:auto;
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+  box-shadow:0 1.5rem 3rem -0.75rem hsla(0,0%, 0%, 0.25) ;
+  border-radius: 0.5rem;
+}
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-type: start;
+  object-fit: cover;
+  width: 100%;
+}
+.slider-nav {
+display: flex;
+column-gap: 1rem;
+position: absolute;
+bottom: 1.25rem;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
+}
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color:#fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+.slider-nav a:hover {
+  opacity: 1;
+}
+.wrapper {
+  margin:150px auto;
+  width: 70%;
+}
+.wrapper img {
+ float:left;
+ border-radius: 8px;
+ position: relative;
+margin-top: -20px;
+width: 245px;
+ 
+}
+.text-box{
+  color: #0f0e0e;
+}
+.text-box h2{
+ font-size: 42px; 
+ text-align: center;
+ font-family: fredoka;
+}
+.text-box p {
+  text-align: center;
+  font-size: 25px;
+  font-family: fredoka;
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.logo{
+  width: 180px;
+  cursor: pointer;
+}
+nav ul{
+  list-style: none;
+  width: 100%;
+  text-align: right;
+  padding-right: 60px;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+nav ul li a{
+  color: rgb(9, 9, 9);
+  text-decoration: none;
+  font-family: fredoka;
+  font-size: 20px;
+}
+.hero img{
+  flex: 1 0 100%;
+  border-radius: 8px;
+  width: 100%;
+}
+.hero h3 {
+  color: #0f0e0e;
+  font-family: fredoka;
+  font-size: 40px;
+  text-align: center;
+}
+.hero h2 {
+  color: #0f0e0e;
+  font-family: fredoka;
+  text-align: center;
+}
+.hero h1{
+  color: rgb(28, 127, 152);
+  font-family: fredoka;
+  text-align: center;
+  font-size: 20px;
+}
+.hero h4 {
+  color: rgb(226, 226, 106);
+  text-align: center;
+  font-size: 15px;
+}
+.footer ul{
+  list-style: none;
+  text-align: center;
+  padding-bottom: 30px;
+  color: black;
+}
+.footer ul li{
+  display: inline-block;
+  padding: 0px 15px;
+  font-family: fredoka;
+  color: black;
+}
+.footer ul li a
+{
+  text-decoration: none;
+color: black;}
+head h1 {
+  text-align: left;
+}
+.social{
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+  color: rgb(7, 8, 8);
+}
+.social a
+{font-size: 20px;
+display: inline-block;
+color: rgb(5, 5, 5);
+}
+body{
+  width: 100%;
+min-height: 100vh;
+background-image:linear-gradient(#fff,rgba(61, 140, 209, 0.65),rgba(136, 128, 197, 0.65)),url(images/background.jpg);
+background-size: cover;
+background-position: center;
+padding: 10px 8%;
+}
